@@ -1,0 +1,104 @@
+
+.footer-area{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        a{
+            transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+            &:hover{
+                color: $pink;
+            }
+        }
+    }
+}
+
+.footer-area{
+    background-size: cover;
+    background-position: center;
+    padding: 90px 0 45px;
+    color: $white;
+    border-radius: 50px 50px 0px 0px;
+    // overflow: hidden;
+    .footer_wrp{
+        display: flex;
+        flex-direction: column;
+        gap: 100px 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        div{
+            width: 100%;
+        }
+        .f-logo{
+            text-align: center;
+        }
+        .footer_nav{
+            a{
+                font-weight: 700;
+                &.active{
+                    color: $pink;
+                }
+            }
+        }
+        .footer_info{
+
+            ul{
+                max-width: 900px;
+                margin-inline: auto;
+                gap: 20px;
+                li{
+                    display: flex;
+                    align-items: baseline;
+                    i{
+                        width: 30px;
+                        flex-shrink: 0;
+                    }
+                    h5{
+                        color: $pink;
+                    }
+                }
+            }
+        }
+        .footer_btm{
+            text-align: center;
+            max-width: 500px;
+            margin-inline:auto ;
+            p{
+                color: $white;
+                margin-bottom: $f40;
+            }
+        }
+    }
+}
+
+.main-footer{
+    position: relative;
+    background: $white2;
+    padding: 40px 0;
+    .footer_left{
+        p{
+            margin-bottom: 0;
+            font-size: $f18;
+        }
+    }
+    .footer_nav_v2{
+        ul{
+            display: flex;
+            justify-content: end;
+            max-width: 520px;
+            width: 100%;
+            justify-content: space-between;
+            margin-left: auto;
+            li{
+                a{
+                    color: $text;
+                    font-size: $f18;
+                    transition: all .3s;
+                    &:hover{
+                        color: $darkBlue;
+                    }
+                }
+            }
+        }
+    }
+}

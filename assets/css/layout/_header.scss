@@ -1,0 +1,220 @@
+.header-area {
+  padding: 30px 0;
+  width: 100%;
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin-bottom: -104px;
+  &.sticky{
+    top: 0;
+    background-color: $text2;
+  }
+  .container{
+    .menu-area {
+      margin-left: -50px;
+      nav{
+        ul{
+          display: flex;
+          gap: 80px;
+          align-items: center;
+          li{
+            display: inline-block;
+            a{
+              font-size: $f18;
+              display: inline-block;
+              position: relative;
+              color: $white;
+              transition: all .3s ease-in-out;
+              &:hover{
+                color: $pink;
+              }
+              &.active{
+                color: $pink;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header_login{
+  ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: end;
+    li{
+      a{
+        width: max-content;
+        color: $white;
+        &.bag_btn{
+          width: 44px;
+          height: 44px;
+          background-color: $pink;
+          display: block;
+          border-radius: 50%;
+          color: $white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &.pink{
+            background: $pink;
+          }
+          &.blue{
+            background: $blue;
+          }
+        }
+        &.user{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          i{
+            width: 44px;
+            height: 44px;
+            display: inline-flex;
+            align-items: center;
+            border-radius: 50%;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+ 
+
+/* humbergar */
+.bar {
+  float: left;
+  margin-right: 20px;
+  margin-top: -3px;
+  a {
+    width: 35px;
+    height: 35px;
+    float: right;
+    position: relative;
+    z-index: 999999;
+
+    span {
+      width: 80%;
+      height: 2px;
+      background: #fff;
+      display: block;
+      position: relative;
+      top: 17px;
+      border-radius: 30px;
+      transition: .3s;
+      &::before {
+        left: 0;
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 100%;
+        background: #fff;
+        bottom: 10px;
+        border-radius: 30px;
+        transition: .3s;
+      }
+      &:after {
+        left: 0;
+        content: "";
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        background: #fff;
+        bottom: -10px;
+        border-radius: 30px;
+        transition: .3s;
+      }
+    }
+  }
+}
+
+/* humbarger END */
+
+
+/* mobile-menu START */
+.mobile-menu {
+  &.siteBar {
+    margin-left: 0;
+  }
+  a.bars{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: $f32;
+  }
+  position: fixed;
+  width: 320px;
+  height: 100vh;
+  background: $white2;
+  z-index: 99;
+  box-shadow: 0px 0px 9px -1px #737373;
+  top: 0;
+  left: 0;
+  transition: .3s;
+  margin-left: -400px;
+  padding-left: 40px;
+  padding-top: 100px;
+  ul{
+    display: block;
+    li{
+      list-style: none;
+      display: block;
+      a{
+        color: #272835;
+        font-size: 16px;
+        line-height: 40px;
+        transition: .3s;
+        &.bars {
+          position: absolute;
+          right: 20px;
+          top: 15px;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          font-size: 32px;
+          color: rgb(255, 0, 43);
+        }
+      }
+    }
+  }
+  .header_login{
+    position: absolute;
+    top: 24px;
+    ul{
+      display: flex;
+      gap: 15px;
+      justify-content: start;
+      li{
+        a{
+          line-height: 25px;
+        }
+        .blue_btn{
+          color: $white;
+          padding: 12px 25px;
+          line-height: 1.5;
+
+        }
+        .pink_btn{
+          color: #fff;
+        }
+        .thm_btn{
+          padding: 12px 25px;
+          line-height: 1.5;
+
+        }
+      }
+    }
+  }
+}
+
+
+/* Header section END */
